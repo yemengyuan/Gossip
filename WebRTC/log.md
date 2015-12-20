@@ -1,6 +1,6 @@
 # 開發紀錄
 
-## PeerConnection
+## 2015/12/20 PeerConnection
 * **iceCandidate要如何取得？**
 * **在開始建立PeerConnection時有一個constrain，那個和我們的creatoffer,setLocalDescription有衝突嗎？之間的關係是什麼？**
 
@@ -8,5 +8,11 @@
 * **creatOffer和creatAnswer有什麼用處？**
 * google io 特地提到有pc.creatOffer,然後用signaling channel send offer
 * 在google io中只是簡單的在obvserver中的onAddStream中讓另一端的顯示出來即可。（利用renderer）
-* 2015/12/20 1:40 AM 耗了一個晚上，終於可以將WebRTC官方範例燒錄到手機中，具體過程我會紀錄下來。
+*  1:40 AM 耗了一個晚上，終於可以將WebRTC官方範例燒錄到手機中，具體過程我會紀錄下來。
 哎，開發真的好艱辛，資源少又沒人可以問。接下來去認真看範例吧。
+
+## 2015/12/21 
+* ice 是 stun和turn的整合技術。在實作的時候會先利用stun，如果失敗，再借用turn來relay。
+* ice之所以叫做整合技術，其實ice裡面有stun server和 turn server
+
+
