@@ -28,3 +28,7 @@
 ## 12/22 開始參考實作
 * 突然發現竟然有一個叫做room server的url, 範例程式用的是https://apprtc.appspot.com。這個url有什麼用嘛？不管先用default
 * 在call裡面發現有好多的設定呀，而且一個也不懂。有空來研究一下。現在能做出來就好了。
+
+## 12/25 實作
+* 發現在signaling上有很多的程式需要開新的線程來執行，但是自己對thread並不是很熟，所以很辛苦。比如說，他們實作了一個叫做loopexecutor的class來執行一些不斷傳遞訊息的動作。** Handler,Looper,Excutor,Thread,Message** 這些關於Thread的都在補充一下知識。
+* 今天晚上去補充上面的問題。
